@@ -15,7 +15,7 @@ public class TreeUsingLL {
         Scanner sc = new Scanner(System.in);
         Node1 root = null;
         System.out.println("Enter value ");
-        int data = sc.nextInt();7
+        int data = sc.nextInt();
 
         if (data == -1)
             return null;
