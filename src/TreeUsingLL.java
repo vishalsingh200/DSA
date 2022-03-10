@@ -10,6 +10,7 @@ class Node1{
         right = null;
     }
 }
+//Tree
 public class TreeUsingLL {
     static Node1 create(){
         Scanner sc = new Scanner(System.in);
