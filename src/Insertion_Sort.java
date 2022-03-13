@@ -1,6 +1,6 @@
 //INSERTION SHORT
 import java.util.Scanner;
-public class Insertion_Sort {
+public class Selection_Sort {
     public static void main(String[] args)
     {
         int temp;
