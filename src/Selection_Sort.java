@@ -1,6 +1,5 @@
-//INSERTION SHORT
 import java.util.Scanner;
-public class Insertion_Sort {
+public class Selection_Sort {
     public static void main(String[] args)
     {
         int temp;
@@ -13,17 +12,17 @@ public class Insertion_Sort {
 
         for (int i = 0; i < n; i++)
         {
-             arr[i] = sc.nextInt();
+            arr[i] = sc.nextInt();
         }
         for (int i = 0; i<n-1; i++)
         {
             int loction = i;
             for (int j = i+1; j<n ; j++)
             {
-               if(arr[j] < arr[loction])
-               {
-                   loction = j;
-               }
+                if(arr[j] < arr[loction])
+                {
+                    loction = j;
+                }
             }
             temp = arr[i];
             arr[i] = arr[loction];
