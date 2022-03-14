@@ -21,7 +21,7 @@ class SelectionSort
         }
     }
 
-
+//selection
     void traverse(int arr[])
     {
         int n = arr.length;
