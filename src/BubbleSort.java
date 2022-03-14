@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class BubbleSort {
     void bubble(int arr[]){
         int n = arr.length;
@@ -18,7 +19,7 @@ public class BubbleSort {
         }
         System.out.println();
     }
-//bubblesort
+
     public static void main(String[] args) {
         BubbleSort obj = new BubbleSort();
         int arr[] = {2,4,3,6,5};
