@@ -1,37 +1,42 @@
-import java.util.Scanner;
 public class Selection_Sort {
-    public static void main(String[] args)
+    void slectionSort(int arr[])
     {
-        int temp;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("number of element u want enter");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
+        int n = arr.length;
 
-        System.out.println("Enter elements ");
 
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n-1; i++)
         {
-            arr[i] = sc.nextInt();
-        }
-        for (int i = 0; i<n-1; i++)
-        {
-            int loction = i;
-            for (int j = i+1; j<n ; j++)
-            {
-                if(arr[j] < arr[loction])
-                {
-                    loction = j;
-                }
-            }
-            temp = arr[i];
-            arr[i] = arr[loction];
-            arr[loction] = temp;
-        }
-        for (int i = 0; i < n; i++)
-        {
-            System.out.println("sorted elements are: " + arr[i]);
-        }
 
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+
+
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    //selection
+    void traverse(int arr[])
+    {
+        int n = arr.length;
+        for (int i=0; i<n; ++i)
+            System.out.println(arr[i]+" ");
+        System.out.println();
+    }
+
+
+    public static void main(String args[])
+    {
+        Selection_Sort ob = new Selection_Sort();
+        int arr[] = {5,3,4,1,2};
+        ob.slectionSort(arr);
+        System.out.println("Sorted array");
+        ob.traverse(arr);
     }
 }
+
+
