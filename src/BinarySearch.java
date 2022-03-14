@@ -14,14 +14,14 @@ public class BinarySearch {
     public static void main(String[] args) {
         BinarySearch obj1 = new BinarySearch();
         int  arr [] = {2,3,5,6,10};
-        int n = args.length;
+        int n = arr.length;
         int x = 5;
         int res = obj1.binary(arr,0,n-1,x);
         if (res == -1)
             System.out.println("Element is not present");
 
         else
-            System.out.println("Element is present at index"+res);
+            System.out.println("Element is present at index "+" "+ res);
 
     }
 }
