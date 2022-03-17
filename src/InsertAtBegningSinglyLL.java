@@ -13,7 +13,7 @@ public class InsertAtBegningSinglyLL {
         return head;
     }
 
-
+//
     public static void main(String[] args) {
         Node0 head = null;
         head = insert(head, 30);
