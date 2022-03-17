@@ -1,4 +1,3 @@
-//
 class Node{
     int data;
     Node next;
@@ -7,7 +6,7 @@ class Node{
         next = null;
     }
 }
-
+//
 public class SimpleLinkedList {
     public static void main(String[] args) {
         Node head = new Node(10);
