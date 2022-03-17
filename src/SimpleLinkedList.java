@@ -1,4 +1,4 @@
-//Simple Linked List
+
 class Node{
     int data;
     Node next;
