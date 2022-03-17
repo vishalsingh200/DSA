@@ -7,11 +7,20 @@ public class StackExample {
         top = -1;
     }
     void push(){
-
-       }
+        Scanner sc = new Scanner(System.in);
+        if (top == arr.length-1){
+            System.out.println("stack overflow");
+        }
+        else{
+        System.out.println("Enter data :");
+            int n = sc.nextInt();
+            top = top + 1;
+            arr [top] = n;
+        }
+    }
 
     void pop(){
-        if (top <0){
+        if (top == -1){
             System.out.println("stack underflow");
         }
         else {
