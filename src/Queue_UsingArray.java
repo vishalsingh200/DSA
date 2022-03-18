@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class QueueImplementation_UsingArray {
+public class Queue_UsingArray {
     int Front = -1;
     int Rare  = -1;
     int n = 5;
@@ -40,7 +40,7 @@ public class QueueImplementation_UsingArray {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        QueueImplementation_UsingArray obj = new QueueImplementation_UsingArray();
+        Queue_UsingArray obj = new Queue_UsingArray();
         while (true){
             System.out.println("\nEnter 1 insert");
             System.out.println("Enter 2 delete");
@@ -67,4 +67,3 @@ public class QueueImplementation_UsingArray {
         }
     }
 }
-
