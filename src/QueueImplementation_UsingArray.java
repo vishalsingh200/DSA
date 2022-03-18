@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class QueueImplementation_UsingArray {
     int Front = -1;
     int Rare  = -1;
