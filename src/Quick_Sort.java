@@ -17,7 +17,6 @@ public class Quick_Sort {
 
             if (arr[j] < pivot)
             {
-
                 i++;
                 swap(arr, i, j);
             }
@@ -36,13 +35,11 @@ public class Quick_Sort {
         }
     }
 
-    // Function to print an array
     static void printArray(int[] arr, int size)
     {
         for(int i = 0; i < size; i++)
             System.out.println(arr[i] + " ");
 
-        System.out.println();
     }
     public static void main(String[] args)
     {
@@ -50,7 +47,6 @@ public class Quick_Sort {
         int n = arr.length;
 
         quickSort(arr, 0, n - 1);
-        System.out.println("Sorted array: ");
         printArray(arr, n);
     }
 }

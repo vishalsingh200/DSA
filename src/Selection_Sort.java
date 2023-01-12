@@ -19,7 +19,6 @@ public class Selection_Sort {
         }
     }
 
-    //selection
     void traverse(int arr[])
     {
         int n = arr.length;
