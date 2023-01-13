@@ -15,6 +15,6 @@ public class AdajencyMatrixGraph1 {
         grpah.addEdge(1,2);
         grpah.addEdge(2,3);
         grpah.addEdge(3,0);
-        System.out.println(grpah);
+        System.out.println(grpah);//
     }
 }
